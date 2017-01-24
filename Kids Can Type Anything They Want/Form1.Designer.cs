@@ -43,6 +43,8 @@
             this.PeachPuff = new System.Windows.Forms.Button();
             this.Gray = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.textSizeUp = new System.Windows.Forms.Button();
+            this.textSizeDown = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mainType
@@ -52,7 +54,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.mainType.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mainType.DetectUrls = false;
-            this.mainType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainType.Location = new System.Drawing.Point(13, 55);
             this.mainType.Name = "mainType";
             this.mainType.ShortcutsEnabled = false;
@@ -173,9 +175,9 @@
             this.clear.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.clear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clear.Location = new System.Drawing.Point(1185, 13);
+            this.clear.Location = new System.Drawing.Point(1189, 13);
             this.clear.Name = "clear";
-            this.clear.Size = new System.Drawing.Size(74, 36);
+            this.clear.Size = new System.Drawing.Size(70, 36);
             this.clear.TabIndex = 10;
             this.clear.Text = "New";
             this.clear.UseVisualStyleBackColor = true;
@@ -259,11 +261,38 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // textSizeUp
+            // 
+            this.textSizeUp.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textSizeUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.textSizeUp.Location = new System.Drawing.Point(1143, 13);
+            this.textSizeUp.Name = "textSizeUp";
+            this.textSizeUp.Size = new System.Drawing.Size(28, 20);
+            this.textSizeUp.TabIndex = 16;
+            this.textSizeUp.Text = "+";
+            this.textSizeUp.UseVisualStyleBackColor = true;
+            this.textSizeUp.Click += new System.EventHandler(this.textSizeUp_Click);
+            // 
+            // textSizeDown
+            // 
+            this.textSizeDown.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textSizeDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.textSizeDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textSizeDown.Location = new System.Drawing.Point(1143, 30);
+            this.textSizeDown.Name = "textSizeDown";
+            this.textSizeDown.Size = new System.Drawing.Size(28, 20);
+            this.textSizeDown.TabIndex = 17;
+            this.textSizeDown.Text = "--";
+            this.textSizeDown.UseVisualStyleBackColor = true;
+            this.textSizeDown.Click += new System.EventHandler(this.textSizeDown_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1271, 680);
+            this.Controls.Add(this.textSizeDown);
+            this.Controls.Add(this.textSizeUp);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Gray);
             this.Controls.Add(this.PeachPuff);
@@ -301,6 +330,8 @@
         private System.Windows.Forms.Button PeachPuff;
         private System.Windows.Forms.Button Gray;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button textSizeUp;
+        private System.Windows.Forms.Button textSizeDown;
     }
 }
 
