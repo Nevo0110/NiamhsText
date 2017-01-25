@@ -19,14 +19,11 @@ namespace Kids_Can_Type_Anything_They_Want
         }
         private void textSizeDown_Click(object sender, EventArgs e)
         {
-            if (mainType.SelectionFont.Size <= 5)
+            if (mainType.SelectionFont.Size > 5)
             {
-                mainType.SelectionFont = new Font(mainType.SelectionFont.FontFamily,mainType.SelectionFont.Size);
+                mainType.SelectionFont = new Font(mainType.SelectionFont.FontFamily,mainType.SelectionFont.Size - 5);
             }
-            else
-            {
-                mainType.SelectionFont = new Font(mainType.SelectionFont.FontFamily, mainType.SelectionFont.Size - 5);
-            }
+            
         }
         private void ColorSelect_Click(object sender, EventArgs e)
         {
